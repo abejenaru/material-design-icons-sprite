@@ -1,0 +1,17 @@
+{
+  "name": "material-design-icons-sprite",
+  "version": "0.1",
+  "description": "Generate SVG sprites for Material design icons",
+  "main": "index.js",
+  "author": "Andrei B.",
+  "license": "MIT",
+  "dependencies": {
+    "@material-design-icons/svg": "^0.10.8",
+    "mkdirp": "^1.0.4",
+    "svg-sprite": "^1.5.4"
+  },
+  "scripts": {
+    "postinstall": "yarn upgrade-interactive --no-progress",
+    "build": "node index.js"
+  }
+}
