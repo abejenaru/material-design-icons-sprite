@@ -1,18 +1,21 @@
 {
   "name": "material-design-icons-sprite",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Generate SVG sprites for Material design icons",
   "main": "index.js",
-  "author": "Andrei B.",
+  "type": "module",
+  "author": "Andrei Bejenaru",
   "license": "MIT",
   "engines": {
-    "node": ">=22.0.0"
+    "node": ">=22.0.0",
+    "pnpm": ">=8.0.0"
   },
   "dependencies": {
     "@material-design-icons/svg": "^0.14.13",
     "svg-sprite": "^2.0.4"
   },
   "scripts": {
-    "build": "node index.js"
+    "build": "node index.js",
+    "clean": "rm -rf node_modules"
   }
 }

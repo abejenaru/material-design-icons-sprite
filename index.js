@@ -1,8 +1,12 @@
 'use strict';
 
-const SVGSpriter = require('svg-sprite');
-const path = require('node:path');
-const fs = require('node:fs');
+import SVGSpriter from 'svg-sprite';
+import path from 'node:path';
+import fs from 'node:fs';
+import { fileURLToPath } from 'node:url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const ROOT_SVG_DIR = path.join(__dirname, 'node_modules/@material-design-icons/svg/');  
 
